@@ -1,0 +1,776 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content="Website pembelajaran Kabel UTP, RJ45, crimping, LAN tester dan jaringan komputer.">
+
+    <title>UTP Lab — Pembelajaran Jaringan Komputer</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Background decoration -->
+    <div class="background-orb orb-1"></div>
+    <div class="background-orb orb-2"></div>
+
+    <!-- NAVBAR -->
+    <header class="navbar">
+        <div class="nav-container">
+
+            <a href="#home" class="logo">
+                <span class="logo-icon">⌁</span>
+                <span>UTP<span class="logo-accent">LAB</span></span>
+            </a>
+
+            <nav>
+                <a href="#materi">Materi</a>
+                <a href="#warna">Urutan Warna</a>
+                <a href="#tutorial">Tutorial</a>
+                <a href="#media">Media</a>
+                <a href="#profil">Profil</a>
+            </nav>
+
+            <button class="menu-button" id="menuButton">
+                ☰
+            </button>
+
+        </div>
+    </header>
+
+
+    <main>
+
+        <!-- HERO -->
+        <section class="hero section" id="home">
+
+            <div class="hero-content">
+
+                <div class="badge">
+                    <span class="status-dot"></span>
+                    Materi Jaringan Komputer
+                </div>
+
+                <h1>
+                    Mengenal & Merangkai
+                    <span>Kabel UTP</span>
+                </h1>
+
+                <p>
+                    Pelajari kabel UTP mulai dari fungsi, jenis kabel,
+                    urutan warna RJ45, proses crimping, hingga pengujian
+                    menggunakan LAN tester.
+                </p>
+
+                <div class="hero-buttons">
+                    <a href="#tutorial" class="button primary">
+                        Mulai Belajar →
+                    </a>
+
+                    <a href="#media" class="button secondary">
+                        Materi & Video
+                    </a>
+                </div>
+
+            </div>
+
+            <div class="hero-card glass">
+
+                <div class="network-animation">
+
+                    <div class="laptop">
+                        <div class="screen"></div>
+                    </div>
+
+                    <div class="network-line">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+
+                    <div class="router">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+
+                    <div class="laptop laptop-right">
+                        <div class="screen"></div>
+                    </div>
+
+                </div>
+
+                <div class="hero-card-info">
+                    <span>NETWORK CONNECTION</span>
+                    <strong>RJ45 → UTP → RJ45</strong>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- MATERI -->
+        <section class="section" id="materi">
+
+            <div class="section-heading">
+                <span class="section-label">01 — DASAR</span>
+
+                <h2>
+                    Apa itu <span>Kabel UTP?</span>
+                </h2>
+
+                <p>
+                    Memahami dasar kabel UTP sebelum mulai membuat
+                    kabel jaringan sendiri.
+                </p>
+            </div>
+
+
+            <div class="info-grid">
+
+                <article class="info-card glass">
+                    <div class="card-icon">〽</div>
+
+                    <h3>Pengertian</h3>
+
+                    <p>
+                        UTP atau <strong>Unshielded Twisted Pair</strong>
+                        adalah kabel yang terdiri dari beberapa pasang
+                        kawat tembaga yang dipilin untuk mengurangi
+                        gangguan sinyal.
+                    </p>
+                </article>
+
+
+                <article class="info-card glass">
+                    <div class="card-icon">◎</div>
+
+                    <h3>Fungsi</h3>
+
+                    <p>
+                        Kabel UTP digunakan untuk menghubungkan perangkat
+                        jaringan seperti komputer, laptop, switch,
+                        router, dan perangkat lainnya.
+                    </p>
+                </article>
+
+
+                <article class="info-card glass">
+                    <div class="card-icon">↯</div>
+
+                    <h3>Keunggulan</h3>
+
+                    <p>
+                        Harganya relatif murah, mudah ditemukan, mudah
+                        dipasang, dan banyak digunakan pada jaringan
+                        LAN.
+                    </p>
+                </article>
+
+            </div>
+
+
+            <div class="tools-section">
+
+                <div class="section-heading small">
+                    <span class="section-label">PERALATAN</span>
+                    <h2>Alat yang Dibutuhkan</h2>
+                </div>
+
+                <div class="tools-grid">
+
+                    <div class="tool glass">
+                        <span>01</span>
+                        <h3>Kabel UTP</h3>
+                        <p>Sebagai media penghantar data.</p>
+                    </div>
+
+                    <div class="tool glass">
+                        <span>02</span>
+                        <h3>RJ45</h3>
+                        <p>Konektor untuk ujung kabel jaringan.</p>
+                    </div>
+
+                    <div class="tool glass">
+                        <span>03</span>
+                        <h3>Tang Crimping</h3>
+                        <p>Untuk memasang RJ45 ke kabel UTP.</p>
+                    </div>
+
+                    <div class="tool glass">
+                        <span>04</span>
+                        <h3>LAN Tester</h3>
+                        <p>Untuk memeriksa koneksi setiap pin.</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- WARNA -->
+        <section class="section" id="warna">
+
+            <div class="section-heading">
+                <span class="section-label">02 — WIRING</span>
+
+                <h2>
+                    Urutan Warna <span>Kabel RJ45</span>
+                </h2>
+
+                <p>
+                    Dua standar susunan kabel yang umum digunakan
+                    adalah T568A dan T568B.
+                </p>
+            </div>
+
+
+            <div class="wiring-grid">
+
+                <!-- T568B -->
+                <div class="wiring-card glass">
+
+                    <div class="wiring-header">
+                        <div>
+                            <span class="standard-label">STANDAR UMUM</span>
+                            <h3>T568B</h3>
+                        </div>
+
+                        <span class="pin-count">8 PIN</span>
+                    </div>
+
+                    <div class="wire-list">
+
+                        <div class="wire-row">
+                            <span>1</span>
+                            <div class="wire orange-white"></div>
+                            <strong>Putih Orange</strong>
+                        </div>
+
+                        <div class="wire-row">
+                            <span>2</span>
+                            <div class="wire orange"></div>
+                            <strong>Orange</strong>
+                        </div>
+
+                        <div class="wire-row">
+                            <span>3</span>
+                            <div class="wire green-white"></div>
+                            <strong>Putih Hijau</strong>
+                        </div>
+
+                        <div class="wire-row">
+                            <span>4</span>
+                            <div class="wire blue"></div>
+                            <strong>Biru</strong>
+                        </div>
+
+                        <div class="wire-row">
+                            <span>5</span>
+                            <div class="wire blue-white"></div>
+                            <strong>Putih Biru</strong>
+                        </div>
+
+                        <div class="wire-row">
+                            <span>6</span>
+                            <div class="wire green"></div>
+                            <strong>Hijau</strong>
+                        </div>
+
+                        <div class="wire-row">
+                            <span>7</span>
+                            <div class="wire brown-white"></div>
+                            <strong>Putih Cokelat</strong>
+                        </div>
+
+                        <div class="wire-row">
+                            <span>8</span>
+                            <div class="wire brown"></div>
+                            <strong>Cokelat</strong>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- T568A -->
+                <div class="wiring-card glass">
+
+                    <div class="wiring-header">
+                        <div>
+                            <span class="standard-label">ALTERNATIF</span>
+                            <h3>T568A</h3>
+                        </div>
+
+                        <span class="pin-count">8 PIN</span>
+                    </div>
+
+                    <div class="wire-list">
+
+                        <div class="wire-row">
+                            <span>1</span>
+                            <div class="wire green-white"></div>
+                            <strong>Putih Hijau</strong>
+                        </div>
+
+                        <div class="wire-row">
+                            <span>2</span>
+                            <div class="wire green"></div>
+                            <strong>Hijau</strong>
+                        </div>
+
+                        <div class="wire-row">
+                            <span>3</span>
+                            <div class="wire orange-white"></div>
+                            <strong>Putih Orange</strong>
+                        </div>
+
+                        <div class="wire-row">
+                            <span>4</span>
+                            <div class="wire blue"></div>
+                            <strong>Biru</strong>
+                        </div>
+
+                        <div class="wire-row">
+                            <span>5</span>
+                            <div class="wire blue-white"></div>
+                            <strong>Putih Biru</strong>
+                        </div>
+
+                        <div class="wire-row">
+                            <span>6</span>
+                            <div class="wire orange"></div>
+                            <strong>Orange</strong>
+                        </div>
+
+                        <div class="wire-row">
+                            <span>7</span>
+                            <div class="wire brown-white"></div>
+                            <strong>Putih Cokelat</strong>
+                        </div>
+
+                        <div class="wire-row">
+                            <span>8</span>
+                            <div class="wire brown"></div>
+                            <strong>Cokelat</strong>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="note glass">
+
+                <div class="note-icon">!</div>
+
+                <div>
+                    <strong>Catatan penting</strong>
+
+                    <p>
+                        Jika membuat kabel straight, kedua ujung kabel
+                        menggunakan standar yang sama, misalnya
+                        T568B → T568B.
+                    </p>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- TUTORIAL -->
+        <section class="section" id="tutorial">
+
+            <div class="section-heading">
+                <span class="section-label">03 — PRAKTIK</span>
+
+                <h2>
+                    Cara Membuat Kabel <span>UTP</span>
+                </h2>
+
+                <p>
+                    Ikuti langkah berikut secara berurutan agar kabel
+                    dapat digunakan dengan baik.
+                </p>
+            </div>
+
+
+            <div class="steps">
+
+                <div class="step glass">
+                    <div class="step-number">01</div>
+
+                    <div>
+                        <h3>Siapkan alat</h3>
+
+                        <p>
+                            Siapkan kabel UTP, konektor RJ45,
+                            tang crimping, dan LAN tester.
+                        </p>
+                    </div>
+                </div>
+
+
+                <div class="step glass">
+                    <div class="step-number">02</div>
+
+                    <div>
+                        <h3>Potong dan kupas kabel</h3>
+
+                        <p>
+                            Potong ujung kabel secara rata kemudian
+                            kupas bagian luar kabel dengan hati-hati.
+                        </p>
+                    </div>
+                </div>
+
+
+                <div class="step glass">
+                    <div class="step-number">03</div>
+
+                    <div>
+                        <h3>Susun warna kabel</h3>
+
+                        <p>
+                            Luruskan delapan kabel kecil dan susun
+                            sesuai standar T568B atau T568A.
+                        </p>
+                    </div>
+                </div>
+
+
+                <div class="step glass">
+                    <div class="step-number">04</div>
+
+                    <div>
+                        <h3>Masukkan ke RJ45</h3>
+
+                        <p>
+                            Masukkan kabel ke konektor RJ45 sampai
+                            seluruh ujung kabel mencapai bagian depan.
+                        </p>
+                    </div>
+                </div>
+
+
+                <div class="step glass">
+                    <div class="step-number">05</div>
+
+                    <div>
+                        <h3>Crimping</h3>
+
+                        <p>
+                            Masukkan RJ45 ke tang crimping lalu tekan
+                            dengan kuat sampai konektor terkunci.
+                        </p>
+                    </div>
+                </div>
+
+
+                <div class="step glass">
+                    <div class="step-number">06</div>
+
+                    <div>
+                        <h3>Test kabel</h3>
+
+                        <p>
+                            Hubungkan kabel ke LAN tester dan pastikan
+                            indikator pin 1 sampai 8 menyala sesuai urutan.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <!-- CONNECTION -->
+            <div class="connection glass">
+
+                <div class="connection-title">
+                    <span class="section-label">PRAKTIK LAN</span>
+
+                    <h2>
+                        Menghubungkan <span>2 Laptop</span>
+                    </h2>
+                </div>
+
+                <div class="connection-diagram">
+
+                    <div class="device">
+                        <div class="device-icon">💻</div>
+                        <strong>Laptop 1</strong>
+                    </div>
+
+                    <div class="connection-cable">
+                        <span></span>
+                        <div>UTP / RJ45</div>
+                        <span></span>
+                    </div>
+
+                    <div class="device">
+                        <div class="device-icon">💻</div>
+                        <strong>Laptop 2</strong>
+                    </div>
+
+                </div>
+
+                <div class="connection-info">
+
+                    <div>
+                        <span>STEP 01</span>
+                        <p>
+                            Hubungkan kedua laptop menggunakan kabel LAN.
+                        </p>
+                    </div>
+
+                    <div>
+                        <span>STEP 02</span>
+                        <p>
+                            Atur alamat IP pada kedua laptop agar
+                            berada dalam satu jaringan.
+                        </p>
+                    </div>
+
+                    <div>
+                        <span>STEP 03</span>
+                        <p>
+                            Lakukan pengujian koneksi menggunakan
+                            perintah <code>ping</code>.
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- MEDIA -->
+        <section class="section" id="media">
+
+            <div class="section-heading">
+                <span class="section-label">04 — MEDIA</span>
+
+                <h2>
+                    Materi <span>Pembelajaran</span>
+                </h2>
+
+                <p>
+                    Akses materi presentasi dan video pembelajaran
+                    melalui tombol berikut.
+                </p>
+            </div>
+
+
+            <div class="media-grid">
+
+                <!-- PPT -->
+                <div class="media-card glass">
+
+                    <div class="media-icon ppt">
+                        PPT
+                    </div>
+
+                    <div class="media-content">
+
+                        <span class="media-type">
+                            PRESENTATION
+                        </span>
+
+                        <h3>Materi Kabel UTP</h3>
+
+                        <p>
+                            Presentasi mengenai kabel UTP,
+                            RJ45, susunan warna dan crimping.
+                        </p>
+
+                        <a
+                            href="https://docs.google.com/presentation/d/100nSZ8NMA8W7rwl2R7PHeFMyMPTI88B1/edit?slide=id.p1#slide=id.p1"
+                            target="_blank"
+                            class="media-button"
+                        >
+                            Buka PPT →
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <!-- VIDEO -->
+                <div class="media-card glass">
+
+                    <div class="media-icon video">
+                        ▶
+                    </div>
+
+                    <div class="media-content">
+
+                        <span class="media-type">
+                            VIDEO PEMBELAJARAN
+                        </span>
+
+                        <h3>Tutorial Crimping UTP</h3>
+
+                        <p>
+                            Video demonstrasi pembuatan kabel
+                            UTP menggunakan konektor RJ45.
+                        </p>
+
+                        <a
+                            href="https://drive.google.com/drive/u/0/home"
+                            target="_blank"
+                            class="media-button"
+                        >
+                            Tonton Video →
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="media-note">
+                <strong>💡 Cara mengganti link</strong>
+
+                <p>
+                    Buka file <code>index.html</code>, kemudian ubah
+                    alamat pada bagian <code>href</code> dengan link
+                    PPT Google Drive, OneDrive, atau video YouTube Anda.
+                </p>
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER / PROFIL -->
+    <footer id="profil">
+
+        <div class="footer-container">
+
+            <div class="profile-heading">
+                <span class="section-label">05 — PROFILE</span>
+
+                <h2>
+                    Profil <span>Mahasiswa</span>
+                </h2>
+
+                <p>
+                    Website pembelajaran jaringan komputer
+                    sebagai bagian dari tugas perkuliahan.
+                </p>
+            </div>
+
+
+            <div class="profile-grid">
+
+                <!-- MAHASISWA -->
+                <div class="profile-card glass">
+
+                    <div class="profile-image">
+
+                        <img
+                            src="image/syukur image.jpeg"
+                            alt="Foto Mahasiswa"
+                        >
+
+                    </div>
+
+                    <div class="profile-info">
+
+                        <span>MAHASISWA</span>
+
+                        <h3>Syukur Ibnu Siva</h3>
+
+                        <p>
+                            D4 Teknologi Informatika
+                            Multimedia Digital
+                        </p>
+
+                        <div class="profile-detail">
+                            <span>Kelas</span>
+                            <strong>MI-XX</strong>
+                        </div>
+
+                        <div class="profile-detail">
+                            <span>NIM</span>
+                            <strong>XXXXXXXX</strong>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- DOSEN -->
+                <div class="profile-card glass">
+
+                    <div class="profile-image">
+
+                        <img
+                            src="image/dosen.png"
+                            alt="Foto Dosen Pengampu"
+                        >
+
+                    </div>
+
+                    <div class="profile-info">
+
+                        <span>DOSEN PENGAMPU</span>
+
+                        <h3>Dr. Ali Firdaus, M.Kom.</h3>
+
+                        <p>
+                            Dosen Pengampu Mata Kuliah
+                            Jaringan Komputer
+                        </p>
+
+                        <div class="profile-detail">
+                            <span>Mata Kuliah</span>
+                            <strong>Jaringan Komputer</strong>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="footer-bottom">
+
+                <div>
+                    © <span id="year"></span> UTP LAB
+                </div>
+
+                <div>
+                    Designed for Multimedia Digital
+                </div>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
